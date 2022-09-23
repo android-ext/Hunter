@@ -3,15 +3,15 @@ include ':hunter-transform',
         ':hunter-timing-library',
         ':hunter-debug-library',
         ':hunter-debug-plugin',
-        ':hunter-linelog-plugin',
-        ':hunter-linelog-library',
         ':hunter-okhttp-plugin',
         ':hunter-okhttp-library',
         ':hunter-okhttp-example',
-        ':hunter-linelog-example',
         ':hunter-debug-example',
         ':hunter-timing-example',
+        ':hunter-block-library',
+        'hunter-largeimage-library',
+        'hunter-largeimage-plugin',
         ':hunter-okhttp-library-compat'
 
 
-
+include ':hunter-block-library'
