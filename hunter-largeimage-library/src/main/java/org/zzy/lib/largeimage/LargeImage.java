@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+
 import com.tencent.mmkv.MMKV;
 
 import org.zzy.lib.largeimage.activity.LargeImageListActivity;
@@ -19,7 +20,7 @@ import okhttp3.Interceptor;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/4 20:58
  * 描    述：门面类，主要用于初始化和配置各项参数
  * 修订历史：2020/4/13 v1.0.0
@@ -124,7 +125,7 @@ public class LargeImage {
 
     /**
      * 是否清理mmkv中的值
-     * 作者: ZhouZhengyi
+     *   
      * 创建时间: 2020/4/11 21:20
      */
     private void isRemoveMmkv() {

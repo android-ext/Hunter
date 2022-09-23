@@ -1,12 +1,12 @@
-package com.tencent.method.plugin.largeimage.transform;
+package com.quinn.hunter.plugin.largeimage.transform;
 
 import com.android.build.api.transform.Context;
 import com.android.build.api.transform.TransformException;
 import com.android.build.api.transform.TransformInput;
 import com.android.build.api.transform.TransformOutputProvider;
-import com.tencent.method.plugin.largeimage.weaver.LargeImageWeaver;
-import com.tencent.plugin.base.HunterTransform;
-import com.tencent.plugin.base.RunVariant;
+import com.quinn.hunter.plugin.largeimage.bytecode.weaver.LargeImageWeaver;
+import com.quinn.hunter.transform.HunterTransform;
+import com.quinn.hunter.transform.RunVariant;
 
 import org.gradle.api.Project;
 
@@ -15,7 +15,7 @@ import java.util.Collection;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/3/31 21:05
  * 描    述：使用Hunter框架，不需用传统方式写Transform
  * 修订历史：

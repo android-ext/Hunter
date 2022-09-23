@@ -12,7 +12,7 @@ import okhttp3.Response;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/5 8:43
  * 描    述：
  * 修订历史：
@@ -50,7 +50,7 @@ public class LargeImageInterceptor implements Interceptor {
 
     /**
     * 判断是否是图片
-    * 作者: ZhouZhengyi
+    *   
     * 创建时间: 2020/4/5 9:45
     */
     private boolean isImage(String contentType){

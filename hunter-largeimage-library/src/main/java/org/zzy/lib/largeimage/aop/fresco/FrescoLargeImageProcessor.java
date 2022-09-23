@@ -17,7 +17,7 @@ import static com.facebook.imagepipeline.request.BasePostprocessor.FALLBACK_BITM
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/4 10:35
  * 描    述：
  * 修订历史：

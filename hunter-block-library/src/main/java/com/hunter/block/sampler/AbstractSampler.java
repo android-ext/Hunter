@@ -17,7 +17,7 @@ package com.tencent.monitor.sampler;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import com.tencent.monitor.HandlerThreadFactory;
+import com.hunter.block.HandlerThreadFactory;
 
 /**
  * {@link AbstractSampler} sampler defines sampler work flow.

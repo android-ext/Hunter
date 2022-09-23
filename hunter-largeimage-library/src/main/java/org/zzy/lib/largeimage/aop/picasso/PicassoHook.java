@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/2 10:47
  * 描    述：将process方法注入到
  * com.squareup.picasso.Request的构造方法中

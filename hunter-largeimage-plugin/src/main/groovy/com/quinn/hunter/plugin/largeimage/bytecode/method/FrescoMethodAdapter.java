@@ -1,4 +1,4 @@
-package com.tencent.method.plugin.largeimage.method;
+package com.quinn.hunter.plugin.largeimage.bytecode.method;
 
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
@@ -6,7 +6,7 @@ import org.objectweb.asm.commons.AdviceAdapter;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/2 22:00
  * 描    述：对ImageRequest类的构造方法进行字节码修改
  * ImageRequest构造方法中会对mPostprocessor字段赋值，
@@ -27,7 +27,7 @@ public class FrescoMethodAdapter extends AdviceAdapter {
      * @param desc   the method's descriptor
      */
     public FrescoMethodAdapter( MethodVisitor mv, int access, String name, String desc) {
-        super(Opcodes.ASM5, mv, access, name, desc);
+        super(Opcodes.  ASM7, mv, access, name, desc);
     }
 
     /**
@@ -37,7 +37,7 @@ public class FrescoMethodAdapter extends AdviceAdapter {
      * 3.设置进FrescoHook的process方法
      * 4.将返回的Postprocessor再设置进ImageRequestBuilder
     * builder.setPostprocessor(FrescoHook.process(builder.getSourceUri()，builder.getPostprocessor(),getResizeOptions()));
-    * 作者: ZhouZhengyi
+    *   
     * 创建时间: 2020/4/2 23:53
     */
     @Override

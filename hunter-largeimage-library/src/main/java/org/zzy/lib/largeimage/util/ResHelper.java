@@ -28,10 +28,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 
-/**
- * @author : Zhouzhengyi
- */
-
 public class ResHelper {
     /**
      * 缓存区大小

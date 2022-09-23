@@ -1,14 +1,14 @@
-package com.tencent.method.plugin.largeimage.weaver;
+package com.quinn.hunter.plugin.largeimage.bytecode.weaver;
 
-import com.tencent.method.plugin.largeimage.adapter.LargeImageClassAdapter;
-import com.tencent.plugin.base.asm.BaseWeaver;
+import com.quinn.hunter.plugin.largeimage.bytecode.adapter.LargeImageClassAdapter;
+import com.quinn.hunter.transform.asm.BaseWeaver;
 
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.ClassWriter;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/3/31 21:24
  * 描    述：
  * 修订历史：

@@ -9,9 +9,9 @@ include ':hunter-transform',
         ':hunter-debug-example',
         ':hunter-timing-example',
         ':hunter-block-library',
-        'hunter-largeimage-library',
-        'hunter-largeimage-plugin',
+        ':hunter-largeimage-library',
+        ':hunter-largeimage-plugin',
+        ':hunter-block-library',
         ':hunter-okhttp-library-compat'
 
 
-include ':hunter-block-library'

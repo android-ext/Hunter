@@ -1,4 +1,4 @@
-package com.tencent.monitor;
+package com.hunter.block;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -11,7 +11,7 @@ import com.tencent.monitor.fps.callbacks.DynamicAvgFrameCallback;
  * @date 2017-04-21
  */
 
-public class FpsMonitor extends com.tencent.monitor.BaseMonitor {
+public class FpsMonitor extends BaseMonitor {
     private FpsConfig mFpsConfig;
     private AtomicBoolean mIsStarted;
     private BaseFrameCallback mFrameCallback;

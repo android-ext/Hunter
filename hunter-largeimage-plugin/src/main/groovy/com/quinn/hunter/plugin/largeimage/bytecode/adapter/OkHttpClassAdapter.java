@@ -1,7 +1,7 @@
-package com.tencent.method.plugin.largeimage.adapter;
+package com.quinn.hunter.plugin.largeimage.bytecode.adapter;
 
-import com.tencent.method.plugin.largeimage.method.OkHttpMethodAdapter;
-import com.tencent.method.plugin.Config;
+import com.quinn.hunter.plugin.largeimage.Config;
+import com.quinn.hunter.plugin.largeimage.bytecode.method.OkHttpMethodAdapter;
 
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
@@ -9,7 +9,7 @@ import org.objectweb.asm.Opcodes;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/5 7:31
  * 描    述：
  * 修订历史：
@@ -20,7 +20,7 @@ public class OkHttpClassAdapter extends ClassVisitor {
     private String className;
 
     public OkHttpClassAdapter(ClassVisitor cv) {
-        super(Opcodes.ASM5, cv);
+        super(Opcodes.  ASM7, cv);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class OkHttpClassAdapter extends ClassVisitor {
     @Override
     public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
         MethodVisitor methodVisitor = cv.visitMethod(access, name, desc, signature, exceptions);
-        //如果插件开关关闭，则不插入字节码
+        // 如果插件开关关闭，则不插入字节码
         if(!Config.getInstance().largeImagePluginSwitch()) {
             return methodVisitor;
         }

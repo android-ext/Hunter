@@ -34,7 +34,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/4 7:41
  * 描    述：此类主要用于处理Hook得到的图片信息
  * 修订历史：
@@ -95,7 +95,7 @@ public class LargeImageManager {
 
     /**
      * 此方法提供给Okhttp拦截使用，只能得到请求地址和文件大小
-     * 作者: ZhouZhengyi
+     *   
      * 创建时间: 2020/4/4 8:05
      */
     public void saveImageInfo(String url, long fileSize) {
@@ -122,7 +122,7 @@ public class LargeImageManager {
      * 文件的大小，如果是从网络加载，会在前面一个方法得到文件大小，加载到内存中以后，会通过这个方法
      * 补全信息。如果是加载本地的图片，就没办法得到文件大小，后期看看能不能通过逆向人工计算得到。
      * 该方法在子线程中执行
-     * 作者: ZhouZhengyi
+     *   
      * 创建时间: 2020/4/4 8:32
      */
     public void saveImageInfo(final String url, long memorySize, final int width, final int height, String framework,
@@ -183,7 +183,7 @@ public class LargeImageManager {
     /**
      * 最后判断文件大小或者内存大小是否有超值
      * 有的话弹出提示框。
-     * 作者: ZhouZhengyi
+     *   
      * 创建时间: 2020/4/6 17:22
      */
     private void isShwoAlarm(String url) {
@@ -208,7 +208,7 @@ public class LargeImageManager {
 
     /**
      * 如果是BitmapDrawable类型，调用该方法
-     * 作者: ZhouZhengyi
+     *   
      * 创建时间: 2020/4/4 9:17
      */
     public Bitmap transform(String imageUrl, BitmapDrawable bitmapDrawable, String framework, int targetWidth, int targetHeight) {
@@ -218,7 +218,7 @@ public class LargeImageManager {
 
     /**
      * 如果是Bitmap类型调用该方法
-     * 作者: ZhouZhengyi
+     *   
      * 创建时间: 2020/4/4 9:17
      */
     public Bitmap transform(String imageUrl, Bitmap sourceBitmap, String framework, int targetWidth, int targetHeight) {
@@ -245,7 +245,7 @@ public class LargeImageManager {
     /**
      * 显示警告弹窗
      * fileSize,memorySize 传进来时都是KB
-     * 作者: ZhouZhengyi
+     *   
      * 创建时间: 2020/4/4 22:05
      */
     public void showDialog(final String url, int width, int height, double fileSize, double memorySize, int targetWidth,

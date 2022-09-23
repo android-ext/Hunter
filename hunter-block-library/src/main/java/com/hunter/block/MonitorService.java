@@ -1,4 +1,4 @@
-package com.tencent.monitor;
+package com.hunter.block;
 
 
 import java.util.HashMap;
@@ -86,24 +86,24 @@ public class MonitorService {
         return frameCallback;
     }
 
-    public static com.tencent.monitor.FpsMonitor getDynamicAvgFpsMonitor(FpsConfig.Builder builder) {
+    public static FpsMonitor getDynamicAvgFpsMonitor(FpsConfig.Builder builder) {
         return getFpsMonitor(builder)
                 .setFrameCallback(getFrameCallback(BaseFrameCallbackType.DynamicAvg));
     }
 
-    public static com.tencent.monitor.FpsMonitor getDropStackFpsMonitor(FpsConfig.Builder builder) {
+    public static FpsMonitor getDropStackFpsMonitor(FpsConfig.Builder builder) {
         return getFpsMonitor(builder)
                 .setFrameCallback(getFrameCallback(BaseFrameCallbackType.DropStack));
     }
 
-    private static com.tencent.monitor.FpsMonitor getFpsMonitor(FpsConfig.Builder builder) {
-        return new com.tencent.monitor.FpsMonitor(builder.build());
+    private static FpsMonitor getFpsMonitor(FpsConfig.Builder builder) {
+        return new FpsMonitor(builder.build());
     }
 
     /**
      * @return 返回 -1代表无效值
      */
-    public static long stopMonitor(com.tencent.monitor.FpsMonitor monitor) {
+    public static long stopMonitor(FpsMonitor monitor) {
         if (monitor != null && monitor.isStarted()) {
             monitor.stop();
             BaseFrameCallback frameCallback = monitor.getFrameCallback();

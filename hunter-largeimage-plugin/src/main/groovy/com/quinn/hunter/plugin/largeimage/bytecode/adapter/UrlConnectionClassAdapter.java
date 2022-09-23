@@ -1,7 +1,7 @@
-package com.tencent.method.plugin.largeimage.adapter;
+package com.quinn.hunter.plugin.largeimage.bytecode.adapter;
 
-import com.tencent.method.plugin.largeimage.method.UrlConnectionMethodAdapter;
-import com.tencent.method.plugin.Config;
+import com.quinn.hunter.plugin.largeimage.Config;
+import com.quinn.hunter.plugin.largeimage.bytecode.method.UrlConnectionMethodAdapter;
 
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
@@ -9,7 +9,7 @@ import org.objectweb.asm.Opcodes;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/5 16:20
  * 描    述：Hook UrlConnection的目的是为了将
  * UrlConnection代理到OKhttp上面，这样通过网络下载图片就可以
@@ -25,7 +25,7 @@ public class UrlConnectionClassAdapter extends ClassVisitor {
     private String className;
 
     public UrlConnectionClassAdapter(ClassVisitor cv) {
-        super(Opcodes.ASM5, cv);
+        super(Opcodes.  ASM7, cv);
     }
 
     @Override
@@ -40,7 +40,7 @@ public class UrlConnectionClassAdapter extends ClassVisitor {
      * 也就是说当访问到某个类的某个方法时进行
      * 而这个方法是，所有的类和方法都有可能存在hook，
      * 所以这里不做类和方法的判断
-     * 作者: ZhouZhengyi
+     *   
      * 创建时间: 2020/4/5 17:25
      */
     @Override

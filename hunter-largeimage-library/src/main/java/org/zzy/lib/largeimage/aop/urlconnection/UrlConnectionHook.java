@@ -12,7 +12,7 @@ import okhttp3.OkHttpClient;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/5 16:36
  * 描    述：
  * 修订历史：
@@ -33,7 +33,7 @@ public class UrlConnectionHook {
     /**
     * 构建一个OkhttpClient，并且判断当前是http还是https，返回相应的OkhttpUrlConnection
      * ObsoleteUrlFactory类在OKhttp3.14版本开始就被删掉了，不是因为有什么问题，只是不推荐使用了
-    * 作者: ZhouZhengyi
+    *   
     * 创建时间: 2020/4/5 20:47
     */
     private static URLConnection createOkHttpUrlConnection(URLConnection urlConnection) throws MalformedURLException {

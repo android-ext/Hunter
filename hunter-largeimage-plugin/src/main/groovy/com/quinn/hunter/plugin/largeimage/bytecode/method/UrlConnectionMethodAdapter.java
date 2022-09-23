@@ -1,4 +1,4 @@
-package com.tencent.method.plugin.largeimage.method;
+package com.quinn.hunter.plugin.largeimage.bytecode.method;
 
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
@@ -6,7 +6,7 @@ import org.objectweb.asm.commons.AdviceAdapter;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/5 16:50
  * 描    述：
  * 修订历史：
@@ -25,7 +25,7 @@ public class UrlConnectionMethodAdapter extends AdviceAdapter {
      * @param desc   the method's descriptor
      */
     public UrlConnectionMethodAdapter(String className, MethodVisitor mv, int access, String name, String desc) {
-        super(Opcodes.ASM5, mv, access, name, desc);
+        super(Opcodes.  ASM7, mv, access, name, desc);
         this.className = className;
     }
 
@@ -38,7 +38,7 @@ public class UrlConnectionMethodAdapter extends AdviceAdapter {
      * @param owner 操作的类
      * @param name 方法名称
      * @param desc 方法描述  （参数）返回值类型
-    * 作者: ZhouZhengyi
+    *   
     * 创建时间: 2020/4/5 17:29
     */
     @Override

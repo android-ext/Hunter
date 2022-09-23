@@ -17,7 +17,7 @@ package com.tencent.monitor.sampler;
 
 import android.util.Log;
 
-import com.tencent.monitor.Utils;
+import com.hunter.block.Utils;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

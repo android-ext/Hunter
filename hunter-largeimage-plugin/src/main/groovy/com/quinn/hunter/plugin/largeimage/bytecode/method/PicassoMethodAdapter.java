@@ -1,4 +1,4 @@
-package com.tencent.method.plugin.largeimage.method;
+package com.quinn.hunter.plugin.largeimage.bytecode.method;
 
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
@@ -6,7 +6,7 @@ import org.objectweb.asm.commons.AdviceAdapter;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/2 10:38
  * 描    述：对Request类的构造方法字节码进行修改
  * Request类构造方法中有一个List<Transformation> transformations
@@ -27,7 +27,7 @@ public class PicassoMethodAdapter extends AdviceAdapter {
      * @param desc   the method's descriptor.
      */
     public PicassoMethodAdapter(MethodVisitor mv, int access, String name, String desc) {
-        super(Opcodes.ASM5, mv, access, name, desc);
+        super(Opcodes.  ASM7, mv, access, name, desc);
     }
 
     /**
@@ -38,7 +38,7 @@ public class PicassoMethodAdapter extends AdviceAdapter {
      * 4.在方法中加入我们自己的Transformation
      * 5.将设置好以后的 List<Transformation> transformations返回给第四个参数
      *  transformations = PicassoHook.process(uri,transformations,resourceId,targetWidth,targetHeight);
-    * 作者: ZhouZhengyi
+    *   
     * 创建时间: 2020/4/2 11:26
     */
     @Override

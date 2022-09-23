@@ -1,8 +1,8 @@
-package com.tencent.method.plugin.largeimage;
+package com.quinn.hunter.plugin.largeimage;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/5 21:24
  * 描    述：JAVABean类，对应gradle中配置的参数
  * 属性必须为public类型，否则无法赋值

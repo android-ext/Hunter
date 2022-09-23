@@ -1,10 +1,10 @@
-package com.tencent.method.plugin.largeimage.adapter;
+package com.quinn.hunter.plugin.largeimage.bytecode.adapter;
 
-import com.tencent.method.plugin.largeimage.method.FrescoMethodAdapter;
-import com.tencent.method.plugin.largeimage.method.GlideMethodAdapter;
-import com.tencent.method.plugin.largeimage.method.ImageLoaderMethodAdapter;
-import com.tencent.method.plugin.largeimage.method.PicassoMethodAdapter;
-import com.tencent.method.plugin.Config;
+import com.quinn.hunter.plugin.largeimage.Config;
+import com.quinn.hunter.plugin.largeimage.bytecode.method.FrescoMethodAdapter;
+import com.quinn.hunter.plugin.largeimage.bytecode.method.GlideMethodAdapter;
+import com.quinn.hunter.plugin.largeimage.bytecode.method.ImageLoaderMethodAdapter;
+import com.quinn.hunter.plugin.largeimage.bytecode.method.PicassoMethodAdapter;
 
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
@@ -13,7 +13,7 @@ import org.objectweb.asm.Opcodes;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/3/31 21:27
  * 描    述：对Glide,Picasso,Fresco,ImageLoader框架中
  * 的方法进行字节码替换
@@ -28,7 +28,7 @@ public class LargeImageClassAdapter extends ClassVisitor {
     private String className;
 
     public LargeImageClassAdapter(ClassVisitor classWriter) {
-        super(Opcodes.ASM5, classWriter);
+        super(Opcodes.  ASM7, classWriter);
     }
 
     @Override
@@ -45,7 +45,6 @@ public class LargeImageClassAdapter extends ClassVisitor {
             return mv;
         }
 
-        // TODO: 2020/4/2 这里考虑做版本兼容
         //对Glide4.11版本的SingleRequest类的构造方法进行字节码修改
         if(className.equals("com/bumptech/glide/request/SingleRequest") && methodName.equals("<init>") && desc!=null){
             return mv == null ? null : new GlideMethodAdapter(mv,access,methodName,desc);

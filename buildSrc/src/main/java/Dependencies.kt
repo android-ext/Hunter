@@ -23,7 +23,7 @@ object Versions {
 }
 
 object PublishVersions {
-    val hunter_common_publish_version = "1.2.1"
+    const val hunter_common_publish_version = "1.2.1"
 
     val hunter_transform = hunter_common_publish_version
 

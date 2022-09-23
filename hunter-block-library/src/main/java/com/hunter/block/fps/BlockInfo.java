@@ -3,7 +3,7 @@ package com.tencent.monitor.fps;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.tencent.monitor.Utils;
+import com.hunter.block.Utils;
 
 /**
  * @date 2017-02-28

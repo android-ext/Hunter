@@ -2,8 +2,8 @@ package com.tencent.monitor.fps.callbacks;
 
 import java.util.List;
 
-import com.tencent.monitor.MonitorLogWriter;
-import com.tencent.monitor.Utils;
+import com.hunter.block.MonitorLogWriter;
+import com.hunter.block.Utils;
 import com.tencent.monitor.fps.BlockInfo;
 import com.tencent.monitor.fps.Calculation;
 import com.tencent.monitor.fps.FpsConfig;

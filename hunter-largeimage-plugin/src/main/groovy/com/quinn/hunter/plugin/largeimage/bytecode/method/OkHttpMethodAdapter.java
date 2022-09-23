@@ -1,4 +1,4 @@
-package com.tencent.method.plugin.largeimage.method;
+package com.quinn.hunter.plugin.largeimage.bytecode.method;
 
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
@@ -6,7 +6,7 @@ import org.objectweb.asm.commons.AdviceAdapter;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/5 7:47
  * 描    述：
  * 修订历史：
@@ -23,7 +23,7 @@ public class OkHttpMethodAdapter extends AdviceAdapter {
      * @param desc   the method's descriptor
      */
     public OkHttpMethodAdapter(MethodVisitor mv, int access, String name, String desc) {
-        super(Opcodes.ASM5, mv, access, name, desc);
+        super(Opcodes.  ASM7, mv, access, name, desc);
     }
 
 
@@ -32,7 +32,7 @@ public class OkHttpMethodAdapter extends AdviceAdapter {
      * 这里不知道为什么在onMethodEnter方法插入会报空指针
      * interceptors.addAll(LargeImage.getInstance().getOkHttpInterceptors());
      * networkInterceptors.addAll(LargeImage.getInstance().getOkHttpNetworkInterceptors());
-     * 作者: ZhouZhengyi
+     *   
      * 创建时间: 2020/4/5 9:39
      */
     @Override

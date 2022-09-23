@@ -1,4 +1,4 @@
-package com.tencent.method.plugin.largeimage.method;
+package com.quinn.hunter.plugin.largeimage.bytecode.method;
 
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
@@ -6,7 +6,7 @@ import org.objectweb.asm.commons.AdviceAdapter;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/1 15:43
  * 描    述：对SingleRequest类中的构造方法进行字节码修改
  * 构造方法会对SingleRequest类进行初始化，其中有一个
@@ -28,7 +28,7 @@ public class GlideMethodAdapter extends AdviceAdapter {
      * @param desc   the method's descriptor ).
      */
     public GlideMethodAdapter( MethodVisitor mv, int access, String name, String desc) {
-        super(Opcodes.ASM5, mv, access, name, desc);
+        super(Opcodes.  ASM7, mv, access, name, desc);
     }
 
     /**
@@ -37,7 +37,7 @@ public class GlideMethodAdapter extends AdviceAdapter {
      * 2.然后对其进行修改
      * 3.将修改后的requestListeners设置回去
      * requestListeners=GlideHook.process(requestListeners);
-    * 作者: ZhouZhengyi
+    *   
     * 创建时间: 2020/4/1 15:51
     */
     @Override

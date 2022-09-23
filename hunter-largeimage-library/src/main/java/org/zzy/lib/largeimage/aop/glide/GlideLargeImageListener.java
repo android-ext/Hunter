@@ -18,7 +18,7 @@ import org.zzy.lib.largeimage.LargeImageManager;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/1 19:55
  * 描    述：当资源加载完成后，会回调这个类里面的onResourceReady方法
  * 在里面编写自己的逻辑

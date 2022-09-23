@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * ================================================
- * 作    者：ZhouZhengyi
+ *   
  * 创建日期：2020/4/1 16:30
  * 描    述：将该类的process方法注入到
  * com.bumptech.glide.request.SingleRequest的构造方法中
